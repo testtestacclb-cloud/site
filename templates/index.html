@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day My Love! 💝</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="main-title">
+                Happy Valentine's Day! 💖
+            </h1>
+            <p class="subtitle">To the most amazing wife in the universe!</p>
+            <div class="heart-animation">
+                <div class="beating-heart">❤️</div>
+            </div>
+        </section>
+
+        <!-- Fun Counter Section -->
+        <section class="counter-section">
+            <h2>We've Been Together For...</h2>
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <div class="counter-number" id="daysCounter">∞</div>
+                    <div class="counter-label">Amazing Days</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="smilesCounter">∞</div>
+                    <div class="counter-label">Smiles Shared</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="kissesCounter">∞</div>
+                    <div class="counter-label">Kisses (at least!)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Love Button -->
+        <section class="interactive-section">
+            <h2>Click for a Random Love Message! 💌</h2>
+            <button class="love-button" id="loveButton">
+                Click Me! 💕
+            </button>
+            <div class="message-display" id="messageDisplay"></div>
+        </section>
+
+        <!-- Love Calculator -->
+        <section class="calculator-section">
+            <h2>Love Calculator 💯</h2>
+            <p class="calc-subtitle">(Spoiler: It's always perfect!)</p>
+            <button class="calc-button" id="calcButton">
+                Calculate Our Love! ❤️
+            </button>
+            <div class="progress-container" id="progressContainer" style="display: none;">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="calc-result" id="calcResult"></div>
+        </section>
+
+        <!-- Reasons Why I Love You -->
+        <section class="reasons-section">
+            <h2>10 Reasons Why I Love You 💝</h2>
+            <div class="reasons-grid" id="reasonsGrid">
+                <!-- Reasons will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Fun Photo Gallery Section -->
+        <section class="gallery-section">
+            <h2>Our Memories 📸</h2>
+            <p class="gallery-note">Our beautiful moments together ❤️</p>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Images will be loaded by JavaScript -->
+                <!-- If no images found, placeholders will show -->
+            </div>
+        </section>
+
+        <!-- Yes/No Question (Always Yes) -->
+        <section class="question-section">
+            <h2>Bt7obene? 🥺</h2>
+            <div class="button-container" id="buttonContainer">
+                <button class="yes-button" id="yesButton">Yes! ❤️</button>
+                <button class="no-button" id="noButton">No</button>
+            </div>
+            <div class="response-message" id="responseMessage"></div>
+        </section>
+
+        <!-- Personal Message Section -->
+        <section class="personal-message">
+            <div class="message-card">
+                <h2>A Special Message Just For You 💌</h2>
+                <p class="love-letter">
+                    My Dearest Wife,
+                    <br><br>
+                    Every day with you is like Valentine's Day. You make my heart skip beats, 
+                    my face hurt from smiling, and my life complete. I created this silly website 
+                    because sometimes words aren't enough to express how much you mean to me.
+                    <br><br>
+                    You're my best friend, my partner in crime, my favorite person to annoy, 
+                    and the love of my life. Thank you for choosing me every single day.
+                    <br><br>
+                    I love you more than all the stars in the sky, all the fish in the sea, 
+                    and all the memes on the internet combined!
+                    <br><br>
+                    Forever Yours,
+                    <br>
+                    Your Loving Husband 💕
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with ❤️</p>
+            <p class="footer-date">Valentine's Day 2026</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
